@@ -26,6 +26,7 @@ function Signin() {
       })
       .catch((error) => {
         setError(error.message)
+        setEmailAddress('');
         setPassword('');
       })
   }
